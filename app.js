@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin: "*",
+        // origin: "*",
         credentials: true,
     })
 );
@@ -31,8 +31,8 @@ app.get("/", (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`App is listening at ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`App is listening at ${PORT}`);
+// });
 
 module.exports = app;
